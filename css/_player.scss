@@ -1,0 +1,399 @@
+.player {
+
+    @include flexKlasik;
+    @include player;
+
+
+
+}
+
+.enemy {
+
+
+    @include player;
+    @include flexKlasik;
+
+
+
+
+}
+
+#player1 {
+
+    animation: player 4s forwards;
+
+
+}
+
+
+
+#player2 {
+
+    animation: player 5s forwards;
+
+}
+
+
+#player3 {
+
+    animation: player 6s forwards;
+
+}
+
+#player4 {
+
+    animation: player 7s forwards;
+
+}
+
+h3 {
+
+
+    @include naslovi;
+    font-size: 25px;
+
+
+}
+
+.stats {
+
+
+    font-size: 20px;
+    color: white;
+
+
+
+
+}
+
+// DEMON KNIGHT ----------------------------------
+
+
+.attackBox1 {
+
+
+    background-color: white;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+}
+
+.attackPower1 {
+
+    background-color: green;
+    width: 160px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+}
+
+.defenseBox1 {
+
+
+    background-color: white;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+}
+
+.defensePower1 {
+
+
+
+    background-color: green;
+    width: 120px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+}
+
+.magicBox1 {
+
+
+    background-color: white;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+}
+
+.magicPower1 {
+
+
+    background-color: green;
+    width: 50px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+}
+
+// SORCERER -------------------
+
+
+
+.attackBox2 {
+
+
+    background-color: white;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+}
+
+.attackPower2 {
+
+    background-color: green;
+    width: 30px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+}
+
+.defenseBox2 {
+
+
+    background-color: white;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+
+}
+
+.defensePower2 {
+
+
+
+    background-color: green;
+    width: 110px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+}
+
+.magicBox2 {
+
+
+    background-color: white;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+}
+
+.magicPower2 {
+
+
+    background-color: green;
+    width: 180px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+
+}
+
+// DEMON ------------------------
+.attackBox3 {
+
+
+    background-color: white;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+}
+
+.attackPower3 {
+
+    background-color: green;
+    width: 80px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+}
+
+.defenseBox3 {
+
+
+    background-color: white;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+
+}
+
+.defensePower3 {
+
+
+
+    background-color: green;
+    width: 180px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+}
+
+.magicBox3 {
+
+
+    background-color: white;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+}
+
+.magicPower3 {
+
+
+    background-color: green;
+    width: 140px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+
+}
+
+//  WARLORD ------------------------
+
+.attackBox4 {
+
+
+    background-color: white;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+}
+
+.attackPower4 {
+
+    background-color: green;
+    width: 130px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+}
+
+.defenseBox4 {
+
+
+    background-color: white;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+}
+
+.defensePower4 {
+
+
+
+    background-color: green;
+    width: 130px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+}
+
+.magicBox4 {
+
+
+    background-color: white;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+}
+
+.magicPower4 {
+
+
+    background-color: green;
+    width: 100px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+
+}
+
+// HOVER OVER
+
+.player1 {
+
+    transform: rotateY(360deg);
+    transition: 1.2s;
+
+
+}
+
+.player2 {
+
+    transform: rotateY(360deg);
+    transition: 1.2s;
+
+
+}
+
+
+.player3 {
+
+    transform: rotateY(360deg);
+    transition: 1.2s;
+
+
+}
+
+.player4 {
+
+    transform: rotateY(360deg);
+    transition: 1.2s;
+
+
+}

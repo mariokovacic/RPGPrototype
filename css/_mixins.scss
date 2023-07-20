@@ -1,0 +1,157 @@
+@mixin flexKlasik {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@mixin naslovi {
+
+
+    color: white;
+    font-family: 'Gilda Display', serif;
+    font-size: 40px;
+
+}
+
+@mixin player {
+
+
+    flex-direction: column;
+    width: 250px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.763);
+    border: 15px ridge rgba(22, 16, 16, 0.839);
+    margin: 10px;
+
+}
+
+@mixin chosenNASLOV {
+
+
+    @include naslovi;
+    padding: 10px;
+    font-size: 80px;
+    font-weight: bolder;
+    color: rgb(74, 21, 21);
+    background-color: rgba(240, 233, 233, 0.183);
+    border: 1px solid white;
+    z-index: 3;
+    margin-top: 500px;
+    position: absolute;
+    animation: characterNaslov 2s ease-in-out;
+
+
+
+}
+
+@mixin arenaLevels {
+
+    @include naslovi;
+    padding: 10px;
+    font-size: 80px;
+    font-weight: bolder;
+    color: rgb(74, 21, 21);
+    background-color: rgba(240, 233, 233, 0.183);
+    border: 1px solid white;
+    z-index: 3;
+    margin-top: 500px;
+    position: absolute;
+    animation: levelTitle 1s forwards;
+
+
+}
+
+@mixin enemyTurn {
+
+    @include naslovi;
+    padding: 10px;
+    font-size: 80px;
+    font-weight: bolder;
+    color: rgb(74, 21, 21);
+    background-color: rgba(240, 233, 233, 0.183);
+    border: 1px solid white;
+    z-index: 3;
+    margin-top: 500px;
+    position: absolute;
+
+
+
+
+}
+
+
+
+@mixin arenaButton {
+
+
+
+    width: 140px;
+    height: 60px;
+    @include flexKlasik;
+    @include naslovi;
+    font-size: 30px;
+    color: rgb(74, 13, 13);
+    background-color: rgba(0, 0, 0, 0.426);
+    font-weight: bolder;
+    text-shadow: 10px;
+    border: 10px ridge rgba(22, 16, 16, 0.839);
+    animation: enter 4s forwards;
+    position: absolute;
+    z-index: 3;
+    top: 70%;
+    left: 80%;
+
+
+}
+
+
+@mixin attackButton {
+
+
+
+    width: 200px;
+    height: 60px;
+    @include naslovi;
+    font-size: 30px;
+    color: rgb(114, 8, 8);
+    background-color: rgba(0, 0, 0, 0.788);
+    font-weight: bolder;
+    text-shadow: 10px;
+    border: 10px ridge rgba(22, 16, 16, 0.839);
+    animation: enter 4s forwards;
+    position: absolute;
+    z-index: 3;
+    top: 80%;
+    left: 43%;
+    right: 70%;
+    margin: 20px;
+
+}
+
+
+
+@mixin potion {
+
+
+    width: 200px;
+    height: 60px;
+    @include naslovi;
+    font-size: 30px;
+    color: rgb(114, 8, 8);
+    background-color: rgba(5, 69, 4, 0.788);
+    font-weight: bolder;
+    text-shadow: 10px;
+    border: 10px ridge rgba(22, 16, 16, 0.839);
+    animation: enter 4s forwards;
+    position: absolute;
+    z-index: 3;
+    top: 80%;
+    left: 43%;
+    right: 70%;
+    margin: 20px;
+
+
+
+}

@@ -1,0 +1,719 @@
+@import "mixins";
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+
+body {
+
+    background: url(/img/spooky-forest-dark-mystery-horror-nature-generated-by-ai.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+}
+
+.hide {
+
+    display: none;
+
+}
+
+#chooseYourUsername {
+
+
+    @include flexKlasik;
+    flex-direction: column;
+    margin: 20px
+}
+
+#enterUsername {
+
+
+    @include naslovi;
+    font-size: 30px;
+    animation: enter 6s forwards;
+
+
+}
+
+#username {
+
+
+    width: 280px;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.599);
+    color: white;
+    animation: enter 8s forwards;
+
+}
+
+#Submit {
+    margin: 20px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.599);
+    color: white;
+    animation: enter 8s forwards;
+
+}
+
+/* WELCOME WINDOW */
+
+
+#theGame {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // height: auto;
+
+}
+
+
+span {
+
+
+    @include naslovi;
+
+}
+
+#naslovWelcome {
+
+    border-top: 2px solid rgb(83, 42, 42);
+    border-bottom: 2px solid rgb(83, 42, 42);
+    animation: welcomeNaslov 4s forwards;
+
+
+}
+
+#enter {
+
+    width: 300px;
+    height: 100px;
+    @include flexKlasik;
+    @include naslovi;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.86);
+    font-weight: bolder;
+    text-shadow: 10px;
+    margin: 50px;
+    margin-left: 170px;
+    border: 10px ridge rgba(22, 16, 16, 0.839);
+    animation: enter 10s forwards;
+
+}
+
+// CHARACTERS
+
+
+#playerName {
+
+
+    @include flexKlasik;
+    margin-left: 20px;
+    margin: 5px;
+    flex-direction: column;
+    font-size: 50px;
+    color: rgb(83, 19, 19);
+    font-weight: bolder;
+    position: absolute;
+    z-index: 3;
+
+}
+
+#chooseYourCharacter {
+
+
+    @include flexKlasik;
+    flex-direction: row;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+}
+
+#characterNaslov {
+
+
+    @include naslovi;
+    @include flexKlasik;
+    letter-spacing: 10px;
+    background-color: rgba(0, 0, 0, 0.712);
+    border-top: 2px solid rgb(83, 42, 42);
+    border-bottom: 2px solid rgb(83, 42, 42);
+    animation: characterNaslov 4s forwards;
+    margin-top: 50px;
+}
+
+
+img {
+
+    border: 15px ridge rgba(22, 16, 16, 0.839);
+    margin: 10px;
+
+
+}
+
+
+
+.chooseMe {
+
+
+    @include naslovi;
+    @include flexKlasik;
+    width: 220px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.684);
+    color: rgba(80, 12, 12, 0.985);
+    border: 2px solid white;
+    border-radius: 10px;
+
+
+}
+
+
+#demonKnight:hover {
+
+    background-color: rgba(84, 14, 14, 0.388);
+
+}
+
+
+
+// CHOSEN ONES 
+
+#chosenOnes {
+
+    @include flexKlasik;
+
+}
+
+.chosen {
+
+    @include chosenNASLOV;
+
+}
+
+.enterArenaDK {
+
+    @include arenaButton;
+
+}
+
+.enterArenaSC {
+
+    @include arenaButton;
+
+}
+
+
+
+.enterArenaD {
+
+
+    @include arenaButton;
+
+
+}
+
+.enterArenaWL {
+
+    @include arenaButton;
+
+
+}
+
+.arena {
+
+
+
+    margin-right: 300px;
+
+
+}
+
+// ARENA ---------------- MAIN --------------------
+
+#arenaTitles {
+
+
+    @include flexKlasik;
+
+
+}
+
+#level1 {
+
+
+    @include arenaLevels;
+    z-index: 4;
+
+
+
+}
+
+
+// HEALTH BARS --------------------------------------------------------------
+
+#healthBox1 {
+
+
+
+    background-color: white;
+    width: 400px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+
+
+}
+
+#healthBar1 {
+
+
+    background-color: green;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+    position: absolute;
+    z-index: 5;
+    top: 2%;
+    left: 23.5%;
+
+
+}
+
+// --------------------
+
+#healthBox2 {
+
+
+
+    background-color: white;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+
+
+}
+
+#healthBar2 {
+
+
+    background-color: green;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    position: absolute;
+    z-index: 5;
+    top: -3.5%;
+    right: 66.5%;
+
+}
+
+.healthbar-ver2 {
+
+    position: absolute;
+    z-index: 5;
+    top: -2%;
+    left: 107.5%;
+
+
+
+
+}
+
+
+// --------------------
+
+#healthBox3 {
+
+
+
+    background-color: white;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+
+
+}
+
+#healthBar3 {
+
+    background-color: green;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    position: absolute;
+    z-index: 5;
+    top: -3.5%;
+    right: 66.5%;
+}
+
+
+
+// --------------------
+
+#healthBox4 {
+
+
+
+    background-color: white;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+
+
+
+
+}
+
+#healthBar4 {
+
+
+    background-color: green;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    position: absolute;
+    z-index: 5;
+    top: 2%;
+    right: 17%;
+
+}
+
+// ATTACK BUTTON ---------------
+
+#arenaCommands {
+
+
+    @include flexKlasik;
+    flex-direction: row;
+    width: 300px;
+    height: 60px;
+}
+
+
+.attackButton {
+
+
+
+    @include attackButton;
+    @include flexKlasik;
+
+
+}
+
+// .specialAttack {
+
+//     @include specialAttack;
+//     @include flexKlasik;
+
+
+
+// }
+
+#enemyTurn {
+
+
+
+    @include enemyTurn;
+    z-index: 4;
+
+
+}
+
+#yourTurn {
+
+
+    @include enemyTurn;
+    z-index: 4;
+
+
+}
+
+// .enemyTurnKrpanje {
+
+
+//     @include enemyTurnKrpanje;
+
+// }
+
+.attacked {
+
+
+    box-shadow: inset;
+
+}
+
+#vs {
+
+
+
+    @include enemyTurn;
+    z-index: 4;
+
+}
+
+// MOVING CARDS COMBINATIONS
+
+.enemy-move1 {
+
+
+    position: absolute;
+    left: 5%;
+    transition: 1.5s;
+
+
+
+}
+
+.enemy-move2 {
+
+    position: absolute;
+    top: -20%;
+    right: 5%;
+    transition: 1.5s;
+
+
+}
+
+.enemy-move3 {
+
+    position: relative;
+    right: -175%;
+    top: -20%;
+    transition: 1.5s;
+
+
+
+}
+
+.enemy-move4 {
+
+
+
+    position: absolute;
+    left: 5%;
+    transition: 1.5s;
+
+
+}
+
+.enemy-move5 {
+
+
+    left: 75%;
+
+
+}
+
+.enemy-move6 {
+
+    position: relative;
+    left: -140%;
+
+
+}
+
+.enemy-move7 {
+
+
+    position: relative;
+    right: -70%;
+
+}
+
+.enemy-move8 {
+
+
+    position: relative;
+    right: -160%;
+
+}
+
+.enemy-move9 {
+
+    position: relative;
+    left: -75%;
+
+
+}
+
+.middle {
+
+
+    position: relative;
+    left: 140%;
+
+}
+
+.middle2 {
+
+
+    position: relative;
+    left: -35%;
+
+}
+
+.middle3 {
+
+
+    position: relative;
+    left: -3%
+}
+
+
+.healthbar-ver3 {
+
+
+    background-color: green;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    position: absolute;
+    z-index: 5;
+    top: -3.5%;
+    right: -66.5%;
+
+
+}
+
+
+.healthbar-ver4 {
+
+
+    background-color: green;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(251, 243, 243);
+    border-radius: 50xp;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    position: absolute;
+    z-index: 5;
+    top: -3.5%;
+    right: -66.5%;
+
+
+}
+
+// ----------------------------------------------------------------
+
+// "THE BASE" is finished here(turns, enemies, attack button etc.) 
+
+.win {
+
+
+    @include naslovi;
+    padding: 10px;
+    font-size: 80px;
+    font-weight: bolder;
+    color: rgb(74, 21, 21);
+    background-color: rgba(11, 194, 29, 0.183);
+    border: 1px solid white;
+    z-index: 5;
+    margin-top: 500px;
+    position: absolute;
+
+
+
+}
+
+.lose {
+
+
+
+    @include naslovi;
+    padding: 10px;
+    font-size: 80px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    background-color: rgba(148, 9, 9, 0.183);
+    border: 1px solid white;
+    z-index: 5;
+    margin-top: 500px;
+    position: absolute;
+
+
+
+
+}
+
+// ATTACKS
+
+#arenaCommands {
+
+
+    @include flexKlasik;
+    flex-direction: column;
+    width: 200px;
+    z-index: 4;
+
+}
+
+.powerAttack {
+
+
+
+    @include attackButton;
+    @include flexKlasik;
+    position: absolute;
+    top: 65%;
+    text-align: center
+}
+
+.potion {
+
+
+
+
+    @include potion;
+    @include flexKlasik;
+    position: absolute;
+    top: 50%;
+
+
+}

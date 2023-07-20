@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@100&family=Gilda+Display&display=swap"
+        rel="stylesheet">
+
+    <title>MyFirstRPGGame</title>
+</head>
+
+<body>
+    <div id="TheGame">
+        <!-- welcome window -->
+
+        <div id="welcomeWindow">
+            <div id="naslovWelcome">
+                <span>D</span>
+                <span>E</span>
+                <span>M</span>
+                <span>O</span>
+                <span>N</span>
+                <span>S</span>
+                <span>&nbsp;</span>
+                <span>&</span>
+                <span>&nbsp;</span>
+                <span>N</span>
+                <span>O</span>
+                <span>T</span>
+                <span>&nbsp;</span>
+                <span>Y</span>
+                <span>E</span>
+                <span>T</span>
+                <span>&nbsp;</span>
+                <span>D</span>
+                <span>E</span>
+                <span>M</span>
+                <span>O</span>
+                <span>N</span>
+                <span>S</span>
+            </div>
+            <div id="chooseYourUsername">
+                <label for="username" id="enterUsername">Enter your name:</label>
+                <br>
+                <input type="text" required id="username">
+                <button id="Submit" value="Submit" onclick="checkForUser(), displayName() ">SUBMIT</button>
+            </div>
+
+            <!-- <div id="enter" class="hide">ENTER...</div> -->
+
+        </div>
+
+        <!-- CHOOSE YOUR CHARACTER ---- CHARACTERS -------------------------------- -->
+
+        <div id="characterNaslovDiv" class="hide">
+            <div id="playerName"></div>
+
+            <h1 id="characterNaslov" class="hide">CHOOSE YOUR CHARACTER!</h1>
+
+
+        </div>
+
+        <!-- CHOSEN CHARACTERS -->
+
+        <div id="chosenOnes" class="hide">
+
+
+            <div id="chosenDKnight" class="hide chosen">DEMON KNIGHT</div>
+            <div id="chosenSorcerer" class="hide chosen">SORCERER</div>
+            <div id="chosenDemon" class="hide chosen">DEMON</div>
+            <div id="chosenWarlord" class="hide chosen">WARLORD</div>
+
+
+
+        </div>
+
+        <!-- ARENA LEVELS AND TITLES -->
+        <div id="arenaTitles" class="hide">
+
+            <!-- LEVELS -->
+            <div id="level1" class="hide">LEVEL 1</div>
+            <div id="level2" class="hide">LEVEL 2</div>
+            <div id="level3" class="hide">LEVEL 3</div>
+            <div id="level4" class="hide">LEVEL 4</div>
+
+            <!-- TURNS -->
+            <div id="vs" class="hide">VS</div>
+            <div id="yourTurn" class="hide">YOUR TURN</div>
+            <div id="enemyTurn" class="hide">ENEMY's TURN</div>
+            <div id="win" class="hide">YOU WON!</div>
+            <div id="lose" class="hide">YOU LOST!</div>
+
+
+        </div>
+
+
+
+        <!-- ARENA -->
+        <div id="ARENA" class="hide">
+
+            <div id="enterArenaWL" class="hide" onclick="arenaWL()">ARENA!</div>
+            <div id="enterArenaD" class="hide" onclick="arenaD()">ARENA!</div>
+            <div id="enterArenaSC" class="hide" onclick="arenaSC()">ARENA!</div>
+            <div id="enterArenaDK" class="hide" onclick="arenaDK()">ARENA!</div>
+
+        </div>
+
+        <!-- -------------------- -->
+
+
+        <div id="chooseYourCharacter" class="hide">
+
+            <div id="arenaDK">
+
+                <div id="healthBar1" class="hide"></div>
+
+                <div id="player1" class="hide" onclick="demonKnight()">
+
+                    <img src="img/2283d30e1bd1eb6d5192b8d09a275195.jpg" alt="image1" width="200" height="300"
+                        class="hide" id="image1">
+
+
+                    <div id="demonKnightStory" class="hide"></div>
+
+
+                    <h3>DEMON KNIGHT</h3>
+                    <h5 class="stats">Attack:</h1>
+                        <div class="attackBox1">
+                            <div class="attackPower1"></div>
+                        </div>
+                        <h5 class="stats">Defense:
+                        </h5>
+                        <div class="defenseBox1">
+
+                            <div class="defensePower1"></div>
+                        </div>
+                        <h5 class="stats">Magic:</h5>
+
+                        <div class="magicBox1">
+                            <div class="magicPower1"></div>
+
+                        </div>
+
+                </div>
+
+            </div>
+
+            <div id="player2" class="hide" onclick="sorcerer()">
+
+                <div id="healthBar2" class="hide" value="100"></div>
+
+                <img src="img/893e98615ba99c99132e48f3344c3a6b.png" alt="image2" width="200" height="300" class="hide"
+                    id="image2">
+
+                <div id="sorcererStory" class="hide"></div>
+
+                <h3>SORCERER</h3>
+                <h5 class="stats">Attack:</h1>
+                    <div class="attackBox2">
+                        <div class="attackPower2"></div>
+                    </div>
+                    <h5 class="stats">Defense:
+                    </h5>
+                    <div class="defenseBox2">
+
+                        <div class="defensePower2"></div>
+                    </div>
+                    <h5 class="stats">Magic:</h5>
+
+                    <div class="magicBox2">
+                        <div class="magicPower2"></div>
+
+                    </div>
+
+
+            </div>
+
+
+            <!-- <div id="enterArena" class="hide">ARENA!
+
+            </div> -->
+            <div id="player3" class="hide" onclick="demon()">
+
+                <div id="healthBar3" class="hide"></div>
+                <img src="img/c510339562d1cabfda42e86b88da2680.jpg" alt="image3" width="200" height="300" class="hide"
+                    id="image3">
+
+                <div id="demonStory" class="hide"></div>
+
+
+                <h3>DEMON</h3>
+                <h5 class="stats">Attack:</h5>
+                <div class="attackBox3">
+                    <div class="attackPower3"></div>
+                </div>
+                <h5 class="stats">Defense:
+                </h5>
+                <div class="defenseBox3">
+
+                    <div class="defensePower3"></div>
+                </div>
+                <h5 class="stats">Magic:</h5>
+
+                <div class="magicBox3">
+                    <div class="magicPower3"></div>
+
+                </div>
+
+
+
+            </div>
+            <div id="player4" class="hide" onclick="warlord()">
+
+                <div id="healthBar4" class="hide"></div>
+
+                <img src="img/viking-warriors-with-burning-eyes-generative-ai.jpg" alt="image4" width="200" height="300"
+                    id="image4" class="hide">
+                <div id="warlordStory" class="hide"></div>
+                <h3>WARLORD</h3>
+                <h5 class="stats">Attack:</h5>
+                <div class="attackBox4">
+                    <div class="attackPower4"></div>
+                </div>
+                <h5 class="stats">Defense:
+                </h5>
+                <div class="defenseBox4">
+
+                    <div class="defensePower4"></div>
+                </div>
+                <h5 class="stats">Magic:</h5>
+
+                <div class="magicBox4">
+                    <div class="magicPower4"></div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <!-- ------------------------------------------------------------------------- -->
+        <!-- THE ARENA ------------------------------------------------------------------ -->
+
+
+        <!-- ATTACK BUTTON -->
+
+        <div id="arenaCommands" class="hide">
+            <div id="potion" class="hide">REVIVE!</div>
+            <div id="powerAttack" class="hide">POWER ATTACK</div>
+            <div id="attackButton" class="hide">ATTACK</div>
+
+            <!-- <div id="specialAttack" class="hide">SPECIAL ATTACK</div>  -->
+
+        </div>
+
+        <script src="/js/script.js"></script>
+</body>
+
+</html>

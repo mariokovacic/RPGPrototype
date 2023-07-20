@@ -1,0 +1,1161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(/img/spooky-forest-dark-mystery-horror-nature-generated-by-ai.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hide {
+  display: none;
+}
+
+#chooseYourUsername {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+#enterUsername {
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  font-size: 30px;
+  animation: enter 6s forwards;
+}
+
+#username {
+  width: 280px;
+  height: 40px;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.599);
+  color: white;
+  animation: enter 8s forwards;
+}
+
+#Submit {
+  margin: 20px;
+  width: 100px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.599);
+  color: white;
+  animation: enter 8s forwards;
+}
+
+/* WELCOME WINDOW */
+#theGame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+}
+
+#naslovWelcome {
+  border-top: 2px solid rgb(83, 42, 42);
+  border-bottom: 2px solid rgb(83, 42, 42);
+  animation: welcomeNaslov 4s forwards;
+}
+
+#enter {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.86);
+  font-weight: bolder;
+  text-shadow: 10px;
+  margin: 50px;
+  margin-left: 170px;
+  border: 10px ridge rgba(22, 16, 16, 0.839);
+  animation: enter 10s forwards;
+}
+
+#playerName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  margin: 5px;
+  flex-direction: column;
+  font-size: 50px;
+  color: rgb(83, 19, 19);
+  font-weight: bolder;
+  position: absolute;
+  z-index: 3;
+}
+
+#chooseYourCharacter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+}
+
+#characterNaslov {
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 10px;
+  background-color: rgba(0, 0, 0, 0.712);
+  border-top: 2px solid rgb(83, 42, 42);
+  border-bottom: 2px solid rgb(83, 42, 42);
+  animation: characterNaslov 4s forwards;
+  margin-top: 50px;
+}
+
+img {
+  border: 15px ridge rgba(22, 16, 16, 0.839);
+  margin: 10px;
+}
+
+.chooseMe {
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.684);
+  color: rgba(80, 12, 12, 0.985);
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+#demonKnight:hover {
+  background-color: rgba(84, 14, 14, 0.388);
+}
+
+#chosenOnes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chosen {
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  padding: 10px;
+  font-size: 80px;
+  font-weight: bolder;
+  color: rgb(74, 21, 21);
+  background-color: rgba(240, 233, 233, 0.183);
+  border: 1px solid white;
+  z-index: 3;
+  margin-top: 500px;
+  position: absolute;
+  animation: characterNaslov 2s ease-in-out;
+}
+
+.enterArenaDK {
+  width: 140px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  font-size: 30px;
+  color: rgb(74, 13, 13);
+  background-color: rgba(0, 0, 0, 0.426);
+  font-weight: bolder;
+  text-shadow: 10px;
+  border: 10px ridge rgba(22, 16, 16, 0.839);
+  animation: enter 4s forwards;
+  position: absolute;
+  z-index: 3;
+  top: 70%;
+  left: 80%;
+}
+
+.enterArenaSC {
+  width: 140px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  font-size: 30px;
+  color: rgb(74, 13, 13);
+  background-color: rgba(0, 0, 0, 0.426);
+  font-weight: bolder;
+  text-shadow: 10px;
+  border: 10px ridge rgba(22, 16, 16, 0.839);
+  animation: enter 4s forwards;
+  position: absolute;
+  z-index: 3;
+  top: 70%;
+  left: 80%;
+}
+
+.enterArenaD {
+  width: 140px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  font-size: 30px;
+  color: rgb(74, 13, 13);
+  background-color: rgba(0, 0, 0, 0.426);
+  font-weight: bolder;
+  text-shadow: 10px;
+  border: 10px ridge rgba(22, 16, 16, 0.839);
+  animation: enter 4s forwards;
+  position: absolute;
+  z-index: 3;
+  top: 70%;
+  left: 80%;
+}
+
+.enterArenaWL {
+  width: 140px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  font-size: 30px;
+  color: rgb(74, 13, 13);
+  background-color: rgba(0, 0, 0, 0.426);
+  font-weight: bolder;
+  text-shadow: 10px;
+  border: 10px ridge rgba(22, 16, 16, 0.839);
+  animation: enter 4s forwards;
+  position: absolute;
+  z-index: 3;
+  top: 70%;
+  left: 80%;
+}
+
+.arena {
+  margin-right: 300px;
+}
+
+#arenaTitles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#level1 {
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  padding: 10px;
+  font-size: 80px;
+  font-weight: bolder;
+  color: rgb(74, 21, 21);
+  background-color: rgba(240, 233, 233, 0.183);
+  border: 1px solid white;
+  z-index: 3;
+  margin-top: 500px;
+  position: absolute;
+  animation: levelTitle 1s forwards;
+  z-index: 4;
+}
+
+#healthBox1 {
+  background-color: white;
+  width: 400px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+#healthBar1 {
+  background-color: green;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+  position: absolute;
+  z-index: 5;
+  top: 2%;
+  left: 23.5%;
+}
+
+#healthBox2 {
+  background-color: white;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+#healthBar2 {
+  background-color: green;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  position: absolute;
+  z-index: 5;
+  top: -3.5%;
+  right: 66.5%;
+}
+
+.healthbar-ver2 {
+  position: absolute;
+  z-index: 5;
+  top: -2%;
+  left: 107.5%;
+}
+
+#healthBox3 {
+  background-color: white;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+#healthBar3 {
+  background-color: green;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  position: absolute;
+  z-index: 5;
+  top: -3.5%;
+  right: 66.5%;
+}
+
+#healthBox4 {
+  background-color: white;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+#healthBar4 {
+  background-color: green;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  position: absolute;
+  z-index: 5;
+  top: 2%;
+  right: 17%;
+}
+
+#arenaCommands {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 300px;
+  height: 60px;
+}
+
+.attackButton {
+  width: 200px;
+  height: 60px;
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  font-size: 30px;
+  color: rgb(114, 8, 8);
+  background-color: rgba(0, 0, 0, 0.788);
+  font-weight: bolder;
+  text-shadow: 10px;
+  border: 10px ridge rgba(22, 16, 16, 0.839);
+  animation: enter 4s forwards;
+  position: absolute;
+  z-index: 3;
+  top: 80%;
+  left: 43%;
+  right: 70%;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#enemyTurn {
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  padding: 10px;
+  font-size: 80px;
+  font-weight: bolder;
+  color: rgb(74, 21, 21);
+  background-color: rgba(240, 233, 233, 0.183);
+  border: 1px solid white;
+  z-index: 3;
+  margin-top: 500px;
+  position: absolute;
+  z-index: 4;
+}
+
+#yourTurn {
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  padding: 10px;
+  font-size: 80px;
+  font-weight: bolder;
+  color: rgb(74, 21, 21);
+  background-color: rgba(240, 233, 233, 0.183);
+  border: 1px solid white;
+  z-index: 3;
+  margin-top: 500px;
+  position: absolute;
+  z-index: 4;
+}
+
+.attacked {
+  box-shadow: inset;
+}
+
+#vs {
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  padding: 10px;
+  font-size: 80px;
+  font-weight: bolder;
+  color: rgb(74, 21, 21);
+  background-color: rgba(240, 233, 233, 0.183);
+  border: 1px solid white;
+  z-index: 3;
+  margin-top: 500px;
+  position: absolute;
+  z-index: 4;
+}
+
+.enemy-move1 {
+  position: absolute;
+  left: 5%;
+  transition: 1.5s;
+}
+
+.enemy-move2 {
+  position: absolute;
+  top: -20%;
+  right: 5%;
+  transition: 1.5s;
+}
+
+.enemy-move3 {
+  position: relative;
+  right: -175%;
+  top: -20%;
+  transition: 1.5s;
+}
+
+.enemy-move4 {
+  position: absolute;
+  left: 5%;
+  transition: 1.5s;
+}
+
+.enemy-move5 {
+  left: 75%;
+}
+
+.enemy-move6 {
+  position: relative;
+  left: -140%;
+}
+
+.enemy-move7 {
+  position: relative;
+  right: -70%;
+}
+
+.enemy-move8 {
+  position: relative;
+  right: -160%;
+}
+
+.enemy-move9 {
+  position: relative;
+  left: -75%;
+}
+
+.middle {
+  position: relative;
+  left: 140%;
+}
+
+.middle2 {
+  position: relative;
+  left: -35%;
+}
+
+.middle3 {
+  position: relative;
+  left: -3%;
+}
+
+.healthbar-ver3 {
+  background-color: green;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  position: absolute;
+  z-index: 5;
+  top: -3.5%;
+  right: -66.5%;
+}
+
+.healthbar-ver4 {
+  background-color: green;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  position: absolute;
+  z-index: 5;
+  top: -3.5%;
+  right: -66.5%;
+}
+
+.win {
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  padding: 10px;
+  font-size: 80px;
+  font-weight: bolder;
+  color: rgb(74, 21, 21);
+  background-color: rgba(11, 194, 29, 0.183);
+  border: 1px solid white;
+  z-index: 5;
+  margin-top: 500px;
+  position: absolute;
+}
+
+.lose {
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  padding: 10px;
+  font-size: 80px;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  background-color: rgba(148, 9, 9, 0.183);
+  border: 1px solid white;
+  z-index: 5;
+  margin-top: 500px;
+  position: absolute;
+}
+
+#arenaCommands {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  z-index: 4;
+}
+
+.powerAttack {
+  width: 200px;
+  height: 60px;
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  font-size: 30px;
+  color: rgb(114, 8, 8);
+  background-color: rgba(0, 0, 0, 0.788);
+  font-weight: bolder;
+  text-shadow: 10px;
+  border: 10px ridge rgba(22, 16, 16, 0.839);
+  animation: enter 4s forwards;
+  position: absolute;
+  z-index: 3;
+  top: 80%;
+  left: 43%;
+  right: 70%;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 65%;
+  text-align: center;
+}
+
+.potion {
+  width: 200px;
+  height: 60px;
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  font-size: 30px;
+  color: rgb(114, 8, 8);
+  background-color: rgba(5, 69, 4, 0.788);
+  font-weight: bolder;
+  text-shadow: 10px;
+  border: 10px ridge rgba(22, 16, 16, 0.839);
+  animation: enter 4s forwards;
+  position: absolute;
+  z-index: 3;
+  top: 80%;
+  left: 43%;
+  right: 70%;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+}
+
+@keyframes welcomeNaslov {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+    transition: 0.1s;
+  }
+  40% {
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+  60% {
+    opacity: 1;
+    transition: 1s;
+  }
+  80% {
+    opacity: 0.5;
+    transition: 6s;
+  }
+  100% {
+    opacity: 0;
+    transition: 6s;
+  }
+}
+span:first-of-type {
+  animation: welcomeNaslov 0.1s forwards 5s;
+}
+
+span:nth-of-type(2) {
+  animation: welcomeNaslov 0.3s forwards 5s;
+}
+
+span:nth-of-type(3) {
+  animation: welcomeNaslov 0.5s forwards 5s;
+}
+
+span:nth-of-type(4) {
+  animation: welcomeNaslov 0.6s forwards 5s;
+}
+
+span:nth-of-type(5) {
+  animation: welcomeNaslov 0.7s forwards 5s;
+}
+
+span:nth-of-type(6) {
+  animation: welcomeNaslov 0.8s forwards 5s;
+}
+
+span:nth-of-type(8) {
+  animation: welcomeNaslov 1.5s forwards;
+}
+
+span:nth-of-type(10) {
+  animation: welcomeNaslov 2s forwards 4.5s;
+}
+
+span:nth-of-type(11) {
+  animation: welcomeNaslov 2.3s forwards 4.5s;
+}
+
+span:nth-of-type(12) {
+  animation: welcomeNaslov 2.5s forwards 4.5s;
+}
+
+span:nth-of-type(14) {
+  animation: welcomeNaslov 2.8s forwards 5s;
+}
+
+span:nth-of-type(15) {
+  animation: welcomeNaslov 3s forwards 5s;
+}
+
+span:nth-of-type(16) {
+  animation: welcomeNaslov 3.2s forwards 5s;
+}
+
+span:nth-of-type(18) {
+  animation: welcomeNaslov 3.5s forwards;
+}
+
+span:nth-of-type(19) {
+  animation: welcomeNaslov 3.7s forwards;
+}
+
+span:nth-of-type(20) {
+  animation: welcomeNaslov 3.8s forwards;
+}
+
+span:nth-of-type(21) {
+  animation: welcomeNaslov 4s forwards;
+}
+
+span:nth-of-type(22) {
+  animation: welcomeNaslov 4.2s forwards;
+}
+
+span:nth-of-type(23) {
+  animation: welcomeNaslov 4.5s forwards;
+}
+
+@keyframes enter {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transition: 12s;
+  }
+}
+@keyframes characterNaslov {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes player {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transition: 1.5;
+  }
+}
+@keyframes character {
+  0% {
+    transform: skew(0deg);
+  }
+  50% {
+    transform: skew(180deg);
+  }
+  100% {
+    transform: skew(360deg);
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.fade-out {
+  animation: fade-out 1s forwards;
+}
+
+.fade-out1 {
+  animation: fade-out 3s forwards;
+}
+
+@keyframes move-left {
+  0% {
+    transform: translate(10, -30);
+  }
+  100% {
+    transform: translate(30, 30);
+  }
+}
+.move-left {
+  margin-right: 800px;
+  transition: 1.5s;
+}
+
+.move-right {
+  margin-left: 600px;
+  transition: 1.5s;
+}
+
+@keyframes levelTitle {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes turn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    transition: 1s;
+  }
+}
+.turn {
+  animation: turn 1s forwards;
+}
+
+.enemy-move {
+  margin-left: 600px;
+  transition: 1.5s;
+}
+
+.winner {
+  animation: fade-out 6s forwards;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 250px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.763);
+  border: 15px ridge rgba(22, 16, 16, 0.839);
+  margin: 10px;
+}
+
+.enemy {
+  flex-direction: column;
+  width: 250px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.763);
+  border: 15px ridge rgba(22, 16, 16, 0.839);
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#player1 {
+  animation: player 4s forwards;
+}
+
+#player2 {
+  animation: player 5s forwards;
+}
+
+#player3 {
+  animation: player 6s forwards;
+}
+
+#player4 {
+  animation: player 7s forwards;
+}
+
+h3 {
+  color: white;
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  font-size: 25px;
+}
+
+.stats {
+  font-size: 20px;
+  color: white;
+}
+
+.attackBox1 {
+  background-color: white;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.attackPower1 {
+  background-color: green;
+  width: 160px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.defenseBox1 {
+  background-color: white;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.defensePower1 {
+  background-color: green;
+  width: 120px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.magicBox1 {
+  background-color: white;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.magicPower1 {
+  background-color: green;
+  width: 50px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.attackBox2 {
+  background-color: white;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.attackPower2 {
+  background-color: green;
+  width: 30px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.defenseBox2 {
+  background-color: white;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.defensePower2 {
+  background-color: green;
+  width: 110px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.magicBox2 {
+  background-color: white;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.magicPower2 {
+  background-color: green;
+  width: 180px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.attackBox3 {
+  background-color: white;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.attackPower3 {
+  background-color: green;
+  width: 80px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.defenseBox3 {
+  background-color: white;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.defensePower3 {
+  background-color: green;
+  width: 180px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.magicBox3 {
+  background-color: white;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.magicPower3 {
+  background-color: green;
+  width: 140px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.attackBox4 {
+  background-color: white;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.attackPower4 {
+  background-color: green;
+  width: 130px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.defenseBox4 {
+  background-color: white;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.defensePower4 {
+  background-color: green;
+  width: 130px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.magicBox4 {
+  background-color: white;
+  width: 200px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.magicPower4 {
+  background-color: green;
+  width: 100px;
+  height: 20px;
+  border: 1px solid rgb(251, 243, 243);
+  border-radius: 50xp;
+}
+
+.player1 {
+  transform: rotateY(360deg);
+  transition: 1.2s;
+}
+
+.player2 {
+  transform: rotateY(360deg);
+  transition: 1.2s;
+}
+
+.player3 {
+  transform: rotateY(360deg);
+  transition: 1.2s;
+}
+
+.player4 {
+  transform: rotateY(360deg);
+  transition: 1.2s;
+}/*# sourceMappingURL=style.css.map */
